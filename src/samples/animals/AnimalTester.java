@@ -10,7 +10,7 @@ public class AnimalTester {
         shark.setPopularName("Tubarão Tigre");
         shark.setAge(20);
         shark.setMass(250.0);
-        shark.setNumberOfFins(2);
+       // shark.setNumberOfFins(2);
 
         System.out.println(shark.getScientificName());
         System.out.println(shark.getPopularName());
