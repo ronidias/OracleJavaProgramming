@@ -3,7 +3,16 @@ package main;
 public class ConcreteClass extends AbstractClass {
 
     //Properties
-    public int password = 3333;
+    public int password;
+
+    //Constructor
+    public ConcreteClass(){
+        password = 3333;
+    }
+
+    public ConcreteClass(int password){
+        this.password = password;
+    }
 
     //Behaviors
     public void sayHello(){

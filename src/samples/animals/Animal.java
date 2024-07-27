@@ -8,6 +8,28 @@ public abstract class Animal {
     private int age;
     private double mass;
 
+    //Constructor
+    public Animal() {
+
+    }
+    public Animal(String scientificName, String popularName) {
+        this.scientificName = scientificName;
+        this.popularName = popularName;
+
+    }
+
+    public Animal(String scientificName, String popularName, int age, double mass) {
+//        this.scientificName = scientificName;
+//        this.popularName = popularName;
+//        this.age = age;
+//        this.mass = mass;
+
+        //Dessa forma invoca o método acima
+        this(scientificName, popularName);
+        this.age = age;
+        this.mass = mass;
+    }
+
     //Bahaviors
     public abstract void born();
 
