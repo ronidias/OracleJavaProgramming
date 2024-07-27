@@ -1,6 +1,6 @@
 package samples.animals;
 
-public class AnimalTester {
+public class AnimalTester implements Aquatic{
 
     public static void main(String[] args) {
 
@@ -25,7 +25,15 @@ public class AnimalTester {
         shark.grows();
         shark.reproduces();
         shark.die();
+        shark.swin();
+
+
 
         System.out.println("Fim do roteiro 3.");
+    }
+
+    @Override
+    public void swin() {
+
     }
 }

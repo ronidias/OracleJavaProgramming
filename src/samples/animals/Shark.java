@@ -2,11 +2,12 @@ package samples.animals;
 
 public class Shark extends Fish {
 
-    //Properties
+    //Specific Properties
+
     private int numberOfFins;
 
 
-    //Behaviors
+    //Specific Behaviors
     @Override
     public void born() {
         System.out.println("Tubarão nascendo");
@@ -39,4 +40,11 @@ public class Shark extends Fish {
     public void setNumberOfFins(int numberOfFins) {
         this.numberOfFins = numberOfFins;
     }
+
+    @Override
+    public void swin() {
+        System.out.println("Tubarão nadando");
+
+    }
+
 }

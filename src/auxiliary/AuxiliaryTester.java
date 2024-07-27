@@ -1,9 +1,6 @@
 package auxiliary;
 
-import main.AbstractClass;
-import main.ConcreteClass;
-import main.ConcreteClass1;
-import main.ConcreteClass2;
+import main.*;
 
 
 public class AuxiliaryTester {
@@ -52,6 +49,29 @@ public class AuxiliaryTester {
         System.out.println(aux.INTERFACE_VAR);
         aux.interfaceMethod1();
         aux.interfaceMethod2();
+
+        System.out.println("Fim do roteiro 4.");
+        System.out.println("----------------------------------------");
+
+        System.out.println("Inicio do roteiro 6.");
+
+        //Não precisa instanciar o objeto, pq ele está como Static, da para chamar direto
+
+//        Tools t01 = new Tools();
+//        Tools t02 = new Tools();
+
+//        t01.option = 'B';
+//        t02.option = 'C';
+//
+//        System.out.println(t01.option);
+//        System.out.println(t02.option);
+
+
+        Tools.option = 'C';
+        Tools.option = 'D';
+        Tools.printOption();
+
+
 
     }
 }

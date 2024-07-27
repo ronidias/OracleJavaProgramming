@@ -1,6 +1,6 @@
 package main;
 
-public abstract class AbstractClass implements Interface1 {
+public abstract class AbstractClass implements Interface1, Interface2 {
 
    //Properties
    public int password = 9999;
@@ -11,4 +11,8 @@ public abstract class AbstractClass implements Interface1 {
    }
    public abstract void syHi();
 
+   @Override
+   public void interfaceMethod2() {
+
+   }
 }
