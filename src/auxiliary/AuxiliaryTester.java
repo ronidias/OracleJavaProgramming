@@ -55,23 +55,26 @@ public class AuxiliaryTester {
 
         System.out.println("Inicio do roteiro 6.");
 
-        //Não precisa instanciar o objeto, pq ele está como Static, da para chamar direto
-
-//        Tools t01 = new Tools();
-//        Tools t02 = new Tools();
-
-//        t01.option = 'B';
-//        t02.option = 'C';
+//        //Não precisa instanciar o objeto, pq ele está como Static, da para chamar direto
 //
-//        System.out.println(t01.option);
-//        System.out.println(t02.option);
+////        Tools t01 = new Tools();
+////        Tools t02 = new Tools();
+//
+////        t01.option = 'B';
+////        t02.option = 'C';
+////
+////        System.out.println(t01.option);
+////        System.out.println(t02.option);
+//
+//
+//        Tools.option = 'C';
+//        Tools.option = 'D';
+//        Tools.printOption();
 
-
-        Tools.option = 'C';
-        Tools.option = 'D';
-        Tools.printOption();
-
-
+    Tools.display("Alguma coisa");
+    Tools.display(25.32f);
+    double value = Tools.sum(10,15.976);
+    System.out.println(value+100);
 
     }
 }
