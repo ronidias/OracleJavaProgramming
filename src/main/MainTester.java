@@ -1,7 +1,5 @@
 package main;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class MainTester {
     public static void main(String[] args) {
 
@@ -25,9 +23,13 @@ public class MainTester {
 
         System.out.println("Fim do roteiro 2.");
 
+        System.out.println("----------------------------------");
 
+        System.out.println("Inicio do roteiro 4.");
 
-
+        System.out.println(ac1.INTERFACE_VAR);
+        ac1.interfaceMethod1();
+        ac1.interfaceMethod2();
 
 
     }

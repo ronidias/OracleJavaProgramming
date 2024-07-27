@@ -43,6 +43,15 @@ public class AuxiliaryTester {
 
         System.out.println("Fim do roteiro 2.");
 
+        System.out.println("Inicio do roteiro 4.");
+        System.out.println(ac1.INTERFACE_VAR);
+        System.out.println(cc3.INTERFACE_VAR);
+
+        AuxiliaryClass aux = new AuxiliaryClass();
+        //aux.INTERFACE_VAR = false;
+        System.out.println(aux.INTERFACE_VAR);
+        aux.interfaceMethod1();
+        aux.interfaceMethod2();
 
     }
 }

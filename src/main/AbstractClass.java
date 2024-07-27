@@ -1,6 +1,6 @@
 package main;
 
-public abstract class AbstractClass {
+public abstract class AbstractClass implements Interface1 {
 
    //Properties
    public int password = 9999;

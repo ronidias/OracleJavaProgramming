@@ -18,4 +18,10 @@ public class ConcreteClass extends AbstractClass {
         System.out.println("oi");
 
     }
+
+    @Override
+    public void interfaceMethod2() {
+        System.out.println("Método 2 da interface 1");
+
+    }
 }

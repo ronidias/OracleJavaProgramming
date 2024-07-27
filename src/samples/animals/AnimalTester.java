@@ -4,6 +4,7 @@ public class AnimalTester {
 
     public static void main(String[] args) {
 
+        System.out.println("Inicio do roteiro 3.");
         Shark shark = new Shark();
 
         shark.setScientificName("Galeocerdo cuvier");
@@ -24,5 +25,7 @@ public class AnimalTester {
         shark.grows();
         shark.reproduces();
         shark.die();
+
+        System.out.println("Fim do roteiro 3.");
     }
 }
