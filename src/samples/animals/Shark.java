@@ -3,8 +3,18 @@ package samples.animals;
 public class Shark extends Fish {
 
     //Specific Properties
-
     private int numberOfFins;
+
+    //Constructor
+    public Shark() {
+
+    }
+    public Shark(String scientificName, String popularName, int age, double mass,int numberOfFins) {
+        super(scientificName,popularName,age,mass);
+        this.numberOfFins = numberOfFins;
+
+
+    }
 
 
     //Specific Behaviors
