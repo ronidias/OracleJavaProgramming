@@ -4,14 +4,16 @@ public class AnimalTester implements Aquatic{
 
     public static void main(String[] args) {
 
-        System.out.println("Inicio do roteiro 3.");
-        Shark shark = new Shark();
+//        System.out.println("Inicio do roteiro 3.");
+//        Shark shark = new Shark();
+//
+//        shark.setScientificName("Galeocerdo cuvier");
+//        shark.setPopularName("Tubarão Tigre");
+//        shark.setAge(20);
+//        shark.setMass(250.0);
+//        shark.setNumberOfFins(2);
 
-        shark.setScientificName("Galeocerdo cuvier");
-        shark.setPopularName("Tubarão Tigre");
-        shark.setAge(20);
-        shark.setMass(250.0);
-        shark.setNumberOfFins(2);
+        Shark shark = new Shark("Galeocerdo cuvier","Tubarão Tigre",20,250.0,2);
 
         System.out.println(shark.getScientificName());
         System.out.println(shark.getPopularName());
