@@ -25,7 +25,7 @@ public class AnimalTester implements Aquatic{
         shark.grows();
         shark.reproduces();
         shark.die();
-       // shark.swin();
+        shark.swin();
 
 
 
