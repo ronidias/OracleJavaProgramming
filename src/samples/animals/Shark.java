@@ -57,4 +57,9 @@ public class Shark extends Fish {
 
     }
 
+    @Override
+    public String toString() {
+        String info = super.toString() + "Quantidade de nadadeiras = " + numberOfFins + '\n';
+        return info;
+    }
 }

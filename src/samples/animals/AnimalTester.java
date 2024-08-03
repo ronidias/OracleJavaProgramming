@@ -1,5 +1,7 @@
 package samples.animals;
 
+import java.sql.SQLOutput;
+
 public class AnimalTester implements Aquatic{
 
     public static void main(String[] args) {
@@ -15,11 +17,13 @@ public class AnimalTester implements Aquatic{
 
         Shark shark = new Shark("Galeocerdo cuvier","Tubarão Tigre",20,250.0,2);
 
-        System.out.println(shark.getScientificName());
-        System.out.println(shark.getPopularName());
-        System.out.println(shark.getAge());
-        System.out.println(shark.getMass());
-        System.out.println(shark.getNumberOfFins());
+//        System.out.println(shark.getScientificName());
+//        System.out.println(shark.getPopularName());
+//        System.out.println(shark.getAge());
+//        System.out.println(shark.getMass());
+//        System.out.println(shark.getNumberOfFins());
+
+        System.out.println(shark);
 
 
         shark.born();
