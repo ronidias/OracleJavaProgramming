@@ -1,6 +1,9 @@
 package auxiliary;
 
 import main.*;
+import main.Enumeration;
+
+import java.util.Arrays;
 
 
 public class AuxiliaryTester {
@@ -85,10 +88,53 @@ public class AuxiliaryTester {
     ConcreteClass2 cc4 = new ConcreteClass2(7890);
     ConcreteClass cc5 = new ConcreteClass(7890);
     AbstractClass cc6 = new ConcreteClass(7890);
+
+        System.out.println("Fim do roteiro 7.");
+        System.out.println("------------------------------------");
+
+        System.out.println("Inicio do roteiro 8.");
+
+ //       Objeto de Enumeração só pode ser instanciado na propria classe
+ //       Enumeration test = Enumeration();
+
+     Enumeration test = Enumeration.ENUM_OBJECT_1;
+     System.out.println(test);
+     System.out.println(Enumeration.ENUM_OBJECT_2);
+     //Enumeration.ENUM_OBJECT_1.value1 = 100;
+     //System.out.println(test.value1);
+        System.out.println(Enumeration.ENUM_OBJECT_1);
+        System.out.println(Enumeration.ENUM_OBJECT_1.getValue1());
+        System.out.println(Enumeration.ENUM_OBJECT_1.getValue2());
+        System.out.println(Enumeration.ENUM_OBJECT_2);
+        System.out.println(Enumeration.ENUM_OBJECT_2.getValue1());
+        System.out.println(Enumeration.ENUM_OBJECT_2.getValue2());
+        System.out.println(Enumeration.ENUM_OBJECT_3);
+        System.out.println(Enumeration.ENUM_OBJECT_3.getValue1());
+        System.out.println(Enumeration.ENUM_OBJECT_3.getValue2());
+
+        //Usando o For
+        for(int i = 0; i < Enumeration.values().length; i ++){
+            System.out.println(Enumeration.values()[i]);
+
+
+        }
+
+        //Usando o ForEach
+        for(Enumeration enumTemp : Enumeration.values()) {
+            System.out.println(enumTemp);
+            System.out.println(enumTemp.getValue1());
+            System.out.println(enumTemp.getValue2());
+        }
+
+        //Usando Stream
+//        Arrays.stream(Enumeration.values())
+//                .forEach( e -> {
+//                System.out.println("EnumObject: " + e.name());
+//                Arrays.stream(e.ge)
+//                });
+//
+
     }
-
-
-
 
 
 }
