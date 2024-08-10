@@ -1,6 +1,8 @@
 package auxiliary;
 
 import main.AbstractClass;
+import main.Annotation1;
+import main.Annotation2;
 import main.ConcreteClass;
 import main.ConcreteClass1;
 import main.ConcreteClass2;
@@ -73,16 +75,16 @@ public class AuxiliaryTester {
 
 //        //Não precisa instanciar o objeto, pq ele está como Static, da para chamar direto
 //
-////        Tools t01 = new Tools();
-////        Tools t02 = new Tools();
+//        Tools t01 = new Tools();
+//        Tools t02 = new Tools();
+
+//        t01.option = 'B';
+//        t02.option = 'C';
 //
-////        t01.option = 'B';
-////        t02.option = 'C';
-////
-////        System.out.println(t01.option);
-////        System.out.println(t02.option);
-//
-//
+//        System.out.println(t01.option);
+//        System.out.println(t02.option);
+
+
 //        Tools.option = 'C';
 //        Tools.option = 'D';
 //        Tools.printOption();
@@ -223,6 +225,18 @@ public class AuxiliaryTester {
         Tools.display(char1);
 
         Method[] methods = Tools.class.getDeclaredMethods();
+        for (Method temp : methods) {
+            if (temp.isAnnotationPresent(Annotation1.class)){
+                Annotation1 a1 = temp.getAnnotation(Annotation1.class);
+                System.out.println("Método anotado: " + temp.getName());
+                System.out.println("Conteudo da anotação: " + a1.value());
+            }
+            if (temp.isAnnotationPresent(Annotation2.class)) {
+                System.out.println("Olá sou Annotation 2 e passei por aqui tbm");
+            }
+        }
+
+
     }
 
 }
