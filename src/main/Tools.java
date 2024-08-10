@@ -26,9 +26,15 @@ public class Tools {
 //        printOption();
 //    }
 
-    public static void display(String str){
-        System.out.println(str);
+
+    @Annotation1("Método genérico utilizado")
+    public static <T> void display(T info){
+        System.out.println(info);
+
+
     }
+
+
     public static void display(double num){
         System.out.println(num);
     }
@@ -38,7 +44,6 @@ public class Tools {
         System.out.println(result);
         return result;
     }
-
 
 
 }

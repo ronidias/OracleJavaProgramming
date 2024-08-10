@@ -10,6 +10,7 @@ import main.ImutableClass;
 import main.Register;
 import main.Tools;
 
+import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -212,6 +213,16 @@ public class AuxiliaryTester {
 
         System.out.println(gc3.getDescription());
         System.out.println(gc3.getPassword());
+
+        System.out.println("Fim do roteiro 11.");
+        System.out.println("------------------------------------");
+
+        System.out.println("Inicio do roteiro 12.");
+
+        Character char1 = 'A';
+        Tools.display(char1);
+
+        Method[] methods = Tools.class.getDeclaredMethods();
     }
 
 }
